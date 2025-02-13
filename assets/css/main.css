@@ -54,6 +54,13 @@ body {
 	position: relative; /* Establishes a new stacking context */
 	z-index: 1;
   }
+  @media screen and (max-width: 480px) {
+	.corner-image {
+	  width: 150px;  /* Smaller width for small screens */
+	  top: 15px;     /* Adjust top position if needed */
+	  right: 15px;   /* Adjust right position if needed */
+	}
+  }
 
 ol, ul {
 	list-style: none;
