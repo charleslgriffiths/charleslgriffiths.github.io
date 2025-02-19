@@ -675,7 +675,7 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../images/home.jpg");
+			background-image: url("../images/homeback.jpg");
 			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
@@ -1190,7 +1190,7 @@ input, select, textarea {
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("../../images/homeback.png");
 			background-position: center;
-			background-size: cover;
+			background-size: width;
 			background-repeat: no-repeat;
 			z-index: 1;
 		}
