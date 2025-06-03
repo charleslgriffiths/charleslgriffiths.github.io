@@ -1,28 +1,81 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Charles Griffiths - Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Add this to your main.css or here for testing */
+			.skill-logo {
+				width: 20px; /* Adjust size as needed */
+				height: 20px; /* Adjust size as needed */
+				margin-right: 8px;
+				vertical-align: middle;
+			}
+			.project-logo {
+				width: 40px; /* Adjust size as needed */
+				height: auto;
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+			.proficiency {
+				font-size: 0.8em;
+				color: #bbb; /* Adjust color as needed */
+				margin-left: 5px;
+			}
+			#skills ul {
+				list-style: none;
+				padding-left: 0;
+			}
+			#skills ul li {
+				margin-bottom: 0.5em;
+			}
+            #projects h4, #education h5 { /* To ensure subheadings look distinct */
+                margin-top: 1.5em;
+                margin-bottom: 0.5em;
+                font-size: 0.9rem; /* Slightly smaller than main section titles */
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+            }
+            #education h6 { /* For Module Titles */
+                font-size: 0.85rem;
+                text-transform: none;
+                letter-spacing: normal;
+                color: #fff;
+                margin-top: 1em;
+                margin-bottom: 0.25em;
+            }
+            .module-item {
+                margin-bottom: 1.5em;
+                padding-left: 1em;
+                border-left: 2px solid #444; /* Subtle border for module items */
+            }
+            .module-item p {
+                margin-bottom: 0.25rem;
+                font-size: 0.9rem;
+            }
+            #projects .project-item ul, .module-item ul {
+                list-style: disc;
+                margin-left: 20px;
+                margin-bottom: 1em;
+                 font-size: 0.9rem;
+            }
+            #projects .project-item ul li, .module-item ul li {
+                padding-left: 0.5em;
+                 margin-bottom: 0.25em;
+            }
+		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
 		<div id="wrapper">
 
-			<!-- Corner Image -->
 			<div class="corner-image">
 				<img src="images/me.JPEG" alt="Charles Griffiths">
 			</div>
 
-			<!-- Header -->
 			<header id="header">
 				<div class="logo">
 					<span class="icon fa-gem"></span>
@@ -31,40 +84,242 @@
 					<div class="inner">
 						<h1>Welcome, I'm Charles Griffiths</h1>
 						<p>
-							Recently completed my Computer Science undergraduate degree at Oxford Brookes University - awaiting results (June) and Graduation (September).
+							Recently completed my Computer Science undergraduate degree at Oxford Brookes University - awaiting results in June and Graduation in September.
 							Explore my detailed projects, experience, and skills!
 						</p>
 					</div>
 				</div>
 				<nav>
 					<ul>
-						<li><a href="#projects">Projects</a></li>
+						<li><a href="#education">Education</a></li>
 						<li><a href="#experience">Experience</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#skills">Skills</a></li>
 						<li><a href="#about">About Me</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
 
-			<!-- Main -->
 			<div id="main">
 
-				<!-- Projects & Skills Section -->
-				<article id="projects">
-					<h2 class="major">Projects & Skills</h2>
+				<article id="education">
+					<h2 class="major">Education</h2>
+					<section class="education-details">
+						<h3>University</h3>
+						<h4>Oxford Brookes University (OBU) <span>(2022 - 2025)</span></h4>
+						<p>
+							BSc Computer Science<br />
+							Average grade up to final semester: 68% (Awaiting final results)<br />
+							Nominated for OBU Tech Show for my dissertation project "SenseFit"
+						</p>
 
-					<!-- Detailed Projects Section -->
-					<section class="projects">
-						<h3>Projects</h3>
+						<hr style="border-color: #555; margin: 2em 0;" />
+
+						<h5>1st Year (2022 - 2023)</h5>
+						<div class="module-item">
+							<h6>Module Name & Code (e.g., COMP400X - Intro to Computing)</h6>
+							<p><strong>Grade:</strong> [Your Grade]</p>
+							<p><strong>Skills Learned:</strong> [List key skills, e.g., Problem Solving, Basic Algorithms, Teamwork]</p>
+							<p><strong>Relevant Projects:</strong> [Any projects from this module, if applicable]</p>
+						</div>
+						<div class="module-item">
+							<h6>Module Name & Code (e.g., COMP400Y - Web Fundamentals)</h6>
+							<p><strong>Grade:</strong> [Your Grade]</p>
+							<p><strong>Skills Learned:</strong> [e.g., HTML, CSS, Basic JavaScript]</p>
+						</div>
+						<hr style="border-color: #555; margin: 2em 0;" />
 						
+						<h5>2nd Year (2023 - 2024)</h5>
+						<div class="module-item">
+							<h6>COMP5011 - Databases</h6>
+							<p><strong>Grade:</strong> [Your Grade]</p>
+							<p><strong>Skills Learned:</strong> SQL, Database Design (ERD, Normalization 1NF & 2NF), Data Transformation (XML, JSON, DTD, XSLT), SQLite, Data Protection (GDPR).</p>
+							<p><strong>Relevant Projects:</strong> Data Transformation & Relational Database Development</p>
+						</div>
+						<div class="module-item">
+							<h6>COMP5013 - Web Application Development</h6>
+							<p><strong>Grade:</strong> [Your Grade]</p>
+							<p><strong>Skills Learned:</strong> Python (Flask), SQLite, AJAX, JSON, HTML, CSS, JavaScript, WCAG Accessibility, Security (SQL Injection, XSS), Responsive Design, Testing.</p>
+							<p><strong>Relevant Projects:</strong> Semantic Debate Forum Web Application</p>
+						</div>
+						<div class="module-item">
+							<h6>COMP5022 - Innovative Product Development</h6>
+							<p><strong>Grade:</strong> [Your Grade]</p>
+							<p><strong>Skills Learned:</strong> Java, Apache Lucene, Microsoft Azure AI, Agile Project Management, GitHub, JUnit, REST APIs, Research, Teamwork.</p>
+							<p><strong>Relevant Projects:</strong> ChatAdvisor</p>
+						</div>
+						<div class="module-item">
+							<h6>COMP5017 - Data Structures and Algorithms</h6>
+							<p><strong>Grade:</strong> [Your Grade]</p>
+							<p><strong>Skills Learned:</strong> Java, Hash Tables, Binary Search Trees (BST), Graph Traversal (DFS, BFS, Dijkstra's, A*), Performance Logging, Test-Driven Development (TDD).</p>
+							<p><strong>Relevant Projects:</strong> Advanced Data Structures & Pathfinding Algorithms in Java</p>
+						</div>
+						<div class="module-item">
+							<h6>COMP5004 - Software Development with C and C++</h6>
+							<p><strong>Grade:</strong> [Your Grade]</p>
+							<p><strong>Skills Learned:</strong> C++, C, Object-Oriented Design, Game Logic Implementation.</p>
+							<p><strong>Relevant Projects:</strong> Text Adventure Game Engine in C++</p>
+						</div>
+						<hr style="border-color: #555; margin: 2em 0;" />
+
+						<h5>3rd Year (2024 - 2025)</h5>
+						<div class="module-item">
+							<h6>COMP6013 - Computing Project (Dissertation)</h6>
+							<p><strong>Grade:</strong> [Your Grade - or "Awaiting Results"]</p>
+							<p><strong>Skills Learned:</strong> Python, React Native, JavaScript, Machine Learning (Random Forest, kNN, LSTM), Agile Project Management, Presentation Skills, Expo, Biometric Data Analysis, GDPR Compliance.</p>
+							<p><strong>Relevant Projects:</strong> SenseFit</p>
+						</div>
+						<div class="module-item">
+							<h6>COMP6011 - Machine Learning</h6>
+							<p><strong>Grade:</strong> [Your Grade]</p>
+							<p><strong>Skills Learned:</strong> Machine Learning (Naïve Bayes, kNN), Neural Networks, Backpropagation, Hyperparameter Tuning, R, Data Preprocessing, Cross-Validation, Performance Analysis.</p>
+							<p><strong>Relevant Projects:</strong> Machine Learning Model Evaluation & Neural Network Implementation</p>
+						</div>
+						<div class="module-item">
+							<h6>COMP6032 - Artificial Intelligence</h6>
+							<p><strong>Grade:</strong> [Your Grade]</p>
+							<p><strong>Skills Learned:</strong> Artificial Intelligence, Heuristic Analysis, Python, Probabilistic Models, Path Planning (A* Search), Optimization.</p>
+							<p><strong>Relevant Projects:</strong> Robo-Uber: AI-Based Autonomous Taxi Dispatch System</p>
+						</div>
+						</section>
+
+					<hr style="border-color: #fff; margin: 3em 0;" /> 
+
+					<section class="education-item">
+						<h3>Pre-University <span>(2014 - 2021)</span></h3>
+						<h4>HSDC Alton College <span>(2021)</span></h4>
+						<p>
+							A-Level: 3 Cs in Computer Science, Law, Psychology
+						</p>
+						<h4>Eggar's School <span>(2019)</span></h4>
+						<p>
+							GCSE: 8 GCSE's Grade 4 and Above (C+)
+						</p>
+					</section>
+				</article>
+
+				<article id="experience">
+					<h2 class="major">Experience & Certifications</h2>
+
+					<section class="experience">
+						<h3>Work Experience</h3>
+						<div class="experience-item">
+							<h4>Icon Solutions, Tuition House, 27/37 St George's Rd, London, SW19 4EU</h4>
+							<p class="role"><strong>Work Experience</strong> | July 2024</p>
+							<p>
+								Gained hands-on exposure to the company's operations. Participated in coding exercises with assistance from Developers, observed agile daily meetings, and engaged in discussions with many knowledgeable professionals. This helped me understand industry practices as well as my employability and interview preparation.
+							</p>
+						</div>
+						<div class="experience-item">
+							<h4>Assistant IT Technician – Treloar's School & College</h4>
+							<p class="role"><strong>Part-Time</strong> | Nov 2021 – February 2022 (4 months)</p>
+							<p>Powell Drive, Holybourne, Alton, GU34 4GL</p>
+							<p>
+								Worked alongside experienced IT technicians, assisting with troubleshooting hardware issues, managing servers and networking tasks, and providing support to students and staff. This position deepened my understanding of IT infrastructure, computer maintenance, and customer service within an educational setting.
+							</p>
+						</div>
+						<div class="experience-item">
+							<h4>Sales Assistant & Stockroom – schuh</h4>
+							<p class="role"><strong>Part-Time</strong> | November 2022 - April 2023 & Oct 2023 - to date (1 year 10 months)</p>
+							<p>Westgate Shopping Centre, Oxford, OX1 1PE</p>
+							<ul>
+								<li>Handled retail sales, provided customer service, and managed stock replenishment.</li>
+								<li>Developed strong teamwork, salesmanship, and negotiation skills.</li>
+							</ul>
+						</div>
+						<div class="experience-item">
+							<h4>Waiter / Front Of House – Petersham Nurseries Teahouse</h4>
+							<p class="role"><strong>Full-Time / Seasonal</strong> | Oct 2021 – July 2023 (1 year 10 months)</p>
+							<p>Off Church Lane, Petersham Rd, Richmond, TW10 7AB</p>
+							<ul>
+								<li>Delivered excellent customer service while managing waiting tables and maintaining a clean environment.</li>
+								<li>Enhanced communication and leadership skills through team collaboration.</li>
+							</ul>
+						</div>
+						<div class="experience-item">
+							<h4>Kitchen Porter – White Truffle Events</h4>
+							<p class="role"><strong>Part-Time</strong> | October 2019 – August 2021 (1 year 11 months)</p>
+							<p>Froyle Park, Ryebridge Ln, Alton, GU34 4LA</p>
+							<ul>
+								<li>Performed duties such as cleaning, and supporting special events.</li>
+								<li>Gained valuable experience in a fast-paced hospitality environment.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="courses">
+						<h3>Certifications</h3>
+						<div class="course-item">
+							<h4>Google Cloud Skills Boost</h4>
+							<ul>
+								<li>Google Cloud Essentials</li>
+								<li>Generative AI Fundamentals</li>
+								<li>Introduction to Duet AI in Google Workspace</li>
+								<li>Introduction to Generative AI</li>
+								<li>Introduction to Large Language Models</li>
+								<li>Introduction to Responsible AI</li>
+							</ul>
+						</div>
+						<div class="course-item">
+							<p><strong>iDEA Foundation:</strong> Bronze Award</p>
+						</div>
+					</section>
+				</article>
+
+				<article id="projects">
+					<h2 class="major">Projects</h2>
+					<section class="projects">
 						<div class="project-item">
-							<h4>SenseFit <span>(COMP6013)</span></h4>
+							<h4>
+								<img src="images/sensefit-logo.png" alt="SenseFit Logo" class="project-logo">
+								SenseFit <span>(COMP6013)</span>
+							</h4>
 							<p>
 								Developing SenseFit – a machine learning-powered mobile application designed to predict injury risks for amateur and semi-professional athletes. Unlike existing solutions tailored for elite sports, SenseFit focuses on accessibility and usability. The app analyzes key biometric data such as heart rate variability (HRV), sleep quality, and fatigue levels to provide personalized injury risk assessments and proactive training recommendations. It integrates advanced ML models like Random Forest, k-Nearest Neighbors (kNN), and Long Short-Term Memory (LSTM) networks to detect trends and optimize injury prevention strategies. Built with React Native, the application ensures a seamless user experience while prioritizing data security and GDPR compliance.
 							</p>
 							<p><strong>Skills:</strong> Python, React Native, JavaScript, Agile Project Management, Presentation Skills, Expo</p>
 						</div>
-						
+						<div class="project-item">
+							<h4>
+                                <img src="images/chatadvisor-logo.png" alt="ChatAdvisor Logo" class="project-logo">
+                                ChatAdvisor <span>(COMP5022)</span>
+                            </h4>
+                
+                            <h4>Problem:</h4>
+                            <p>University students, especially those with learning difficulties, often face challenges in navigating extensive support 
+        resources and accessing timely, understandable advice. This project aimed to enhance information 
+        accessibility and provide a streamlined student support solution.</p>
+        
+                            <h4>Solution:</h4>
+                            <p>In an Agile Scrum team of seven, we developed ChatAdvisor, an AI-powered chatbot leveraging Natural Language Processing (NLP) techniques. This conversational AI solution was
+         designed for enhanced student support, providing quick access to university resources 
+        through summarised, easy-to-read information and personalised 
+        recommendations tailored to specific student queries.</p>
+        
+                            <h4>My Contributions:</h4>
+                            <ul>
+                                <li>🔍 Integrating Apache Lucene to enable efficient information retrieval.</li>
+                                <li>✨ Leveraged Microsoft Azure AI Text Analytics for effective text summarisation.</li>
+                                <li>🤖 Configured OpenAI's GPT-3.5 Turbo for empathetic, context-aware AI responses.</li>
+                                <li>💻 Led User Interface (UI) development with Java Swing for an intuitive UX.</li>
+                                <li>ℹ️ Developed FAQ page to enhance usability and support access.</li>
+                            </ul>
+                        
+                            <h4>Core Technologies:</h4>
+                            <ul>
+                                <li><strong>AI & NLP Tools:</strong> Apache Lucene, Microsoft Azure AI Text Analytics, OpenAI GPT-3.5 Turbo</li>
+                                <li><strong>Backend Software Development:</strong> Java</li>
+                                <li><strong>Frontend UI Development:</strong> Java Swing</li>
+                                <li><strong>Cloud & API Integration:</strong> Microsoft Azure AI</li>
+                            </ul>
+                        
+                            <h4>Achievements & Impact:</h4>
+                            <ul>
+                                <li>Delivered an AI chatbot for quick, summarised access to university support, helping to reduce student stress</li>
+                                <li>Provided a personalised user experience with tailored recommendations for individual student queries</li>
+                            </ul>
+						</div>
 						<div class="project-item">
 							<h4>Machine Learning Model Evaluation &amp; Neural Network Implementation <span>(COMP6011)</span></h4>
 							<p>
@@ -72,7 +327,6 @@
 							</p>
 							<p><strong>Skills:</strong> Machine Learning, Neural Networks, Backpropagation, Hyperparameter Tuning, R</p>
 						</div>
-						
 						<div class="project-item">
 							<h4>Robo-Uber: AI-Based Autonomous Taxi Dispatch System <span>(COMP6032)</span></h4>
 							<p>
@@ -80,7 +334,6 @@
 							</p>
 							<p><strong>Skills:</strong> Artificial Intelligence, Heuristic Analysis, Python, Probabilistic Models, Path Planning</p>
 						</div>
-						
 						<div class="project-item">
 							<h4>Data Transformation &amp; Relational Database Development <span>(COMP5011)</span></h4>
 							<p>
@@ -98,7 +351,6 @@
 							</p>
 							<p><strong>Skills:</strong> SQL, Database Design</p>
 						</div>
-						
 						<div class="project-item">
 							<h4>Semantic Debate Forum Web Application <span>(COMP5013)</span></h4>
 							<p>
@@ -106,15 +358,6 @@
 							</p>
 							<p><strong>Skills:</strong> Web Application Development, Python, SQLite, AJAX, JSON, WCAG, Testing</p>
 						</div>
-						
-						<div class="project-item">
-							<h4>ChatAdvisor <span>(COMP5022)</span></h4>
-							<p>
-								Developed as part of my Innovative Product Development module, ChatAdvisor is an AI-powered chatbot designed to assist students with learning difficulties. The project integrated Microsoft Azure AI-Language for summarization alongside ChatGPT’s conversational API to create a context-aware support system. Working in a small Agile team, I contributed to the Java backend—refining a Lucene-based text search and researching industry best practices—while gaining valuable insights into software development processes.
-							</p>
-							<p><strong>Skills:</strong> Java, Apache Lucene, Microsoft Azure AI, Agile Project Management, GitHub, JUnit, REST APIs, Research</p>
-						</div>
-						
 						<div class="project-item">
 							<h4>Advanced Data Structures &amp; Pathfinding Algorithms in Java <span>(COMP5017)</span></h4>
 							<p>
@@ -122,7 +365,6 @@
 							</p>
 							<p><strong>Skills:</strong> Java, Data Structures, Pathfinding Algorithms, Graph Traversal</p>
 						</div>
-						
 						<div class="project-item">
 							<h4>Text Adventure Game Engine in C++ <span>(COMP5004)</span></h4>
 							<p>
@@ -131,18 +373,86 @@
 							<p><strong>Skills:</strong> C++, Object-Oriented Design, C</p>
 						</div>
 					</section>
+				</article>
 
-					<!-- Skills Summary -->
+				<article id="skills">
+					<h2 class="major">Skills</h2>
 					<section class="skills">
-						<h3>Skills</h3>
-						<h4>Technical Skills</h4>
+						<h3>Technical Skills</h3>
+						
+						<h4>Programming Languages</h4>
 						<ul>
-							<li><strong>Programming Languages:</strong> Python, Java, C, C++, R, JavaScript</li>
-							<li><strong>Web Development:</strong> HTML, CSS, React Native</li>
-							<li><strong>Database &amp; ML:</strong> SQL, Machine Learning, AI, Data Analytics</li>
-							<li><strong>Other:</strong> Agile Development, Git, Apache Lucene</li>
+							<li><img src="images/logos/python-logo.png" alt="Python" class="skill-logo"> Python <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/java-logo.svg" alt="Java" class="skill-logo"> Java <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/cplusplus-logo.svg" alt="C++" class="skill-logo"> C++ <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/c-logo.png" alt="C" class="skill-logo"> C <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/c#-logo.svg" alt="C#" class="skill-logo"> C# <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/javascript-logo.svg" alt="JavaScript" class="skill-logo"> JavaScript <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/pascal-logo.png" alt="Pascal" class="skill-logo"> Pascal <span class="proficiency">(Proficiency Level)</span></li>
 						</ul>
-						<h4>Soft Skills</h4>
+
+						<h4>Web Development (Frontend)</h4>
+						<ul>
+							<li><img src="images/logos/html5-logo.svg" alt="HTML" class="skill-logo"> HTML <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/css3-logo.svg" alt="CSS" class="skill-logo"> CSS <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/javascript-logo.svg" alt="JavaScript" class="skill-logo"> JavaScript <span class="proficiency">(Proficiency Level)</span></li> 
+							<li><img src="images/logos/jquery-logo.svg" alt="jQuery" class="skill-logo"> jQuery <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/react-native-logo.png" alt="React Native" class="skill-logo"> React Native <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/ajax-logo.png" alt="AJAX" class="skill-logo"> AJAX <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/json-logo.png" alt="JSON" class="skill-logo"> JSON <span class="proficiency">(Proficiency Level)</span></li>
+						</ul>
+
+						<h4>Web Development (Backend)</h4>
+						<ul>
+							<li><img src="images/logos/flask-logo.png" alt="Flask" class="skill-logo"> Flask <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/nodejs-logo.svg" alt="Node.js" class="skill-logo"> Node.js <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/postgresql-logo.png" alt="PostgreSQL" class="skill-logo"> PostgreSQL <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/sql-logo.png" alt="SQL" class="skill-logo"> SQL <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/sqlite-logo.png" alt="SQLite" class="skill-logo"> SQLite <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/mysql-logo.png" alt="MySQL" class="skill-logo"> MySQL <span class="proficiency">(Proficiency Level)</span></li>
+						</ul>
+						
+						<h4>Developer Tools & Practices</h4>
+						<ul>
+							<li><img src="images/logos/git-logo.svg" alt="Git" class="skill-logo"> Git <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/github-logo.svg" alt="GitHub" class="skill-logo"> GitHub <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/npm-logo.svg" alt="NPM" class="skill-logo"> NPM <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/agile-logo.png" alt="Agile" class="skill-logo"> Agile Development <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/junit-logo.png" alt="JUnit" class="skill-logo"> JUnit <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/apache-lucene-logo.png" alt="Apache Lucene" class="skill-logo"> Apache Lucene <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/expo-go-logo.svg" alt="Expo" class="skill-logo"> Expo <span class="proficiency">(Proficiency Level)</span></li>
+						</ul>
+
+						<h4>Cloud Platforms</h4>
+						<ul>
+						    <li><img src="images/logos/azure-logo.svg" alt="Microsoft Azure" class="skill-logo"> Microsoft Azure AI <span class="proficiency">(Proficiency Level)</span></li>
+						    <li><img src="images/logos/gcp-logo.png" alt="Google Cloud Platform" class="skill-logo"> Google Cloud Platform <span class="proficiency">(Proficiency Level)</span></li>
+						</ul>
+                        
+                        <h4>Data Science & ML Tools</h4>
+                        <ul>
+                            <li><img src="images/logos/r-logo.png" alt="R" class="skill-logo"> R <span class="proficiency">(Proficiency Level)</span></li>
+                            <li><img src="images/logos/numpy-logo.png" alt="NumPy" class="skill-logo"> NumPy <span class="proficiency">(Proficiency Level)</span></li>
+                            <li><img src="images/logos/matplotlib-logo.png" alt="Matplotlib" class="skill-logo"> Matplotlib <span class="proficiency">(Proficiency Level)</span></li>
+                            <li><img src="images/logos/jupyter-logo.png" alt="Jupyter" class="skill-logo"> Jupyter Notebooks <span class="proficiency">(Proficiency Level)</span></li>
+                            <li><img src="images/logos/google-colab-logo.png" alt="Google Colab" class="skill-logo"> Google Colab <span class="proficiency">(Proficiency Level)</span></li>
+                        </ul>
+
+						<h4>Machine Learning & AI Concepts</h4>
+						<ul>
+							<li><img src="images/logos/machine-learning-logo.png" alt="Machine Learning" class="skill-logo"> Machine Learning <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/ai-logo.png" alt="Artificial Intelligence" class="skill-logo"> Artificial Intelligence <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/neural-networks-logo.png" alt="Neural Networks" class="skill-logo"> Neural Networks & Backpropagation <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/hyperparameter-tuning-logo.png" alt="Hyperparameter Tuning" class="skill-logo"> Hyperparameter Tuning <span class="proficiency">(Proficiency Level)</span></li>
+						</ul>
+						
+						<h4>Database Management Concepts</h4>
+						<ul>
+							<li><img src="images/logos/database-design-logo.png" alt="Database Design" class="skill-logo"> Database Design (ERD, Normalization) <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/data-transformation-logo.png" alt="Data Transformation" class="skill-logo"> Data Transformation (XML, JSON, DTD, XSLT) <span class="proficiency">(Proficiency Level)</span></li>
+						</ul>
+
+						<h3>Soft Skills</h3>
 						<ul>
 							<li>Critical and Analytical Thinking</li>
 							<li>Communication and Teamwork</li>
@@ -150,99 +460,13 @@
 							<li>Adaptability</li>
 							<li>Leadership</li>
 							<li>Problem Solving</li>
+							<li>Presentation Skills</li>
+							<li>Customer Service</li>
+							<li>Salesmanship & Negotiation</li>
 						</ul>
 					</section>
 				</article>
 
-				<!-- Updated Experience Section -->
-				<article id="experience">
-					<h2 class="major">Experience & Courses</h2>
-
-					<!-- Relevant Work Experience -->
-					<section class="experience">
-						<h3>Relevant Work Experience</h3>
-						
-						<div class="experience-item">
-							<h4>Icon Solutions <span>(July 2024)</span></h4>
-							<p>
-								During my week at Icon Solutions, I gained hands-on exposure to the company's operations. I participated in practical coding exercises with detailed feedback, observed agile daily meetings, and engaged in in-depth discussions with Software Engineers. This experience helped me understand industry practices, improve my technical skills, and refine my CV and interview preparation.
-							</p>
-						</div>
-						
-						<div class="experience-item">
-							<h4>Assistant IT Technician – Treloar's School and College for Disabled Children</h4>
-							<p>
-								In this role, I worked alongside experienced IT technicians, assisting with troubleshooting hardware issues, managing servers and networking tasks, and providing support to students and staff. This position deepened my understanding of IT infrastructure, computer maintenance, and customer service within an educational setting.
-							</p>
-						</div>
-					</section>
-
-					<!-- Other Work Experience -->
-					<section class="experience">
-						<h3>Other Work Experience</h3>
-						
-						<div class="experience-item">
-							<h4>Sales Advisor &amp; Stock Room Keeper – schuh</h4>
-							<p class="role"><strong>Part-Time</strong> | Nov 2023 – Present</p>
-							<p>Oxford, England, United Kingdom | On-site</p>
-							<ul>
-								<li>Handled retail sales, provided customer service, and managed stock replenishment.</li>
-								<li>Developed strong teamwork, salesmanship, and negotiation skills.</li>
-							</ul>
-						</div>
-						
-						<div class="experience-item">
-							<h4>Waiter / Front Of House – Petersham Nurseries</h4>
-							<p class="role"><strong>Full-Time / Seasonal</strong> | Oct 2021 – Aug 2023</p>
-							<p>Petersham, England, United Kingdom | On-site</p>
-							<ul>
-								<li>Delivered excellent customer service while managing waiting tables and maintaining a clean environment.</li>
-								<li>Enhanced communication and leadership skills through team collaboration.</li>
-							</ul>
-						</div>
-						
-						<div class="experience-item">
-							<h4>Sales Advisor – schuh</h4>
-							<p class="role"><strong>Part-Time</strong> | Nov 2022 – Apr 2023</p>
-							<p>Oxford &amp; Kingston-upon Thames, England | On-site</p>
-							<ul>
-								<li>Engaged with customers, promoted sales, and provided efficient service.</li>
-								<li>Refined skills in persuasion, negotiation, and retail teamwork.</li>
-							</ul>
-						</div>
-						
-						<div class="experience-item">
-							<h4>Kitchen Porter / Waiter – Harbour Hotels Group</h4>
-							<p class="role"><strong>Part-Time</strong> | Oct 2019 – Aug 2021</p>
-							<p>Froyle Park Country Estate and Northbrook Park Wedding Venue | On-site</p>
-							<ul>
-								<li>Performed duties such as waiting tables, cleaning, and supporting special events.</li>
-								<li>Gained valuable experience in a fast-paced hospitality environment.</li>
-							</ul>
-						</div>
-					</section>
-
-					<!-- Certifications & Courses -->
-					<section class="courses">
-						<h3>Certifications &amp; Courses</h3>
-						<div class="course-item">
-							<h4>Google Cloud Skills Boost</h4>
-							<ul>
-								<li>Google Cloud Essentials</li>
-								<li>Generative AI Fundamentals</li>
-								<li>Introduction to Duet AI in Google Workspace</li>
-								<li>Introduction to Generative AI</li>
-								<li>Introduction to Large Language Models</li>
-								<li>Introduction to Responsible AI</li>
-							</ul>
-						</div>
-						<div class="course-item">
-							<p><strong>iDEA Foundation:</strong> Bronze Award Winner</p>
-						</div>
-					</section>
-				</article>
-
-				<!-- About Section -->
 				<article id="about">
 					<h2 class="major">About Me</h2>
 					<p>
@@ -259,7 +483,6 @@
 					</ul>
 				</article>
 
-				<!-- Contact Section -->
 				<article id="contact">
 					<h2 class="major">Contact</h2>
 					<form method="POST" action="https://formspree.io/f/mrberjoj">
@@ -278,15 +501,15 @@
 							</div>
 						</div>
 						<input type="hidden" name="_subject" value="New Contact Form Submission!" />
-						<!-- Optional: Uncomment to redirect to a thank-you page -->
-						<!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" /> -->
 						<ul class="actions">
 							<li><input type="submit" value="Send Message" class="primary" /></li>
 							<li><input type="reset" value="Reset" /></li>
 						</ul>
 					</form>
 					<div class="details">
-						<p>Or please contact me at: <a href="mailto:clg@gmx.co.uk" title="Email">clg@gmx.co.uk</a></p>
+						<p><strong>Address:</strong> Flat 15, 1 Avenue Elmers, Surbiton, Greater London, KT6 4SP</p>
+						<p><strong>Mobile:</strong> <a href="tel:+447767141993">+44 7767141993</a></p>
+						<p><strong>Email:</strong> <a href="mailto:clg@gmx.co.uk" title="Email">clg@gmx.co.uk</a></p>
 					</div>
 					<ul class="icons">
 						<li>
@@ -300,24 +523,23 @@
 							</a>
 						</li>
 						<li>
-							<a href="charles-griffiths-cv-2025.pdf" class="icons fas fa-download" title="Download Resume"></a>
+							<a href="charles-griffiths-cv-2025.pdf" class="icon solid fa-download" title="Download Resume">
+								<span class="label">Download Resume</span>
+							</a>
 						</li>
 					</ul>
 				</article>
 
 			</div>
 
-			<!-- Footer -->
 			<footer id="footer">
 				<p class="copyright">&copy; 2025 Charles Griffiths</p>
 			</footer>
 
 		</div>
 
-		<!-- Background -->
 		<div id="bg"></div>
 
-		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
