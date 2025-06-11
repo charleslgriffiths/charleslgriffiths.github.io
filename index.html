@@ -5,50 +5,40 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		
 		<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 		
 		<style>
-			/* Light Theme Color Inversion */
-			body, input, select, textarea { color: #333; }
-			h1, h2, h3, h4, h5, h6, strong, b { color: #000; }
-			a { border-bottom-color: rgba(0, 0, 0, 0.5); }
-			hr { border-bottom-color: #ccc; }
-			h1.major, h2.major, h3.major { border-bottom-color: #000; }
-			#header > *:before { background: #ccc; }
-			#header .content, #header nav ul, #header nav ul li { border-color: #000; }
-			#header nav ul li a:hover { background-color: rgba(0, 0, 0, 0.05); }
-			#main article { background-color: rgba(255, 255, 255, 0.95); }
-
-			/* Background Image */
-			#bg {
-				background-image: url('images/image_eac3ed.jpg');
-				background-size: cover;
-				background-position: center center;
-			}
-			#bg:before {
-				background-color: rgba(255, 255, 255, 0.6);
-			}
-
-			/* Bigger Headshot */
+			/* Headshot Styling */
 			.corner-image {
-				width: 200px;
-				height: 200px;
+				width: 180px;
+				height: 180px;
 			}
 			.corner-image img {
+				border-radius: 50%; /* Makes it circular */
 				border: 3px solid white;
-				box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+				box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 			}
 
-			/* New Skills Section Styling */
-			.skill-logo {
-				font-size: 2.2em; /* Bigger logos */
+			/* Project Logo Size */
+			.project-logo {
+				width: 60px; /* Resized to be smaller */
+				height: auto;
 				margin-right: 15px;
 				vertical-align: middle;
-				color: #000;
+			}
+			
+			/* New Skills Section Styling */
+			.skill-logo {
+				font-size: 2.2em;
+				margin-right: 15px;
+				vertical-align: middle;
 			}
 			.proficiency {
 				font-size: 0.8em;
-				color: #333;
+				color: #333; /* Dark text for readability */
 				background-color: #f0f0f0;
 				padding: 4px 10px;
 				border-radius: 5px;
@@ -59,7 +49,7 @@
 			#skills h4 {
 				margin-top: 2em;
 				padding-bottom: 0.5em;
-				border-bottom: 1px solid #ccc;
+				border-bottom: 1px solid #444; /* Border for dark theme */
 			}
 			#skills ul {
 				list-style: none;
@@ -70,6 +60,11 @@
 				font-size: 1.1em;
 				display: flex;
 				align-items: center;
+			}
+			
+			/* Ensures background image covers the screen without being overly zoomed */
+			#bg {
+				background-size: cover;
 			}
 		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -117,157 +112,125 @@
 						<p>
 							BSc Computer Science<br />
 							Average grade up to final semester: 68% (Awaiting final results)<br />
-							Nominated for OBU Tech Show for my dissertation project "SenseFit".
+							Nominated for OBU Tech Show for my dissertation project "SenseFit". 
 						</p>
 						<hr />
 						<h5>3rd Year (2024 - 2025)</h5>
 						<div class="module-item">
-							<h6>Computing Project (Dissertation)</h6>
+							<h6>Computing Project (Dissertation) </h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
 						</div>
 						<div class="module-item">
-							<h6>Artificial Intelligence</h6>
+							<h6>Artificial Intelligence </h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
 						</div>
 						<div class="module-item">
-							<h6>Machine Learning</h6>
+							<h6>Machine Learning </h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
 						</div>
 						<div class="module-item">
-							<h6>Software Development</h6>
+							<h6>Software Development </h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
 						</div>
 						<div class="module-item">
-							<h6>Cloud Computing & IoT</h6>
+							<h6>Cloud Computing & IoT </h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
 						</div>
 						<div class="module-item">
-							<h6>Principles of Secure OS</h6>
+							<h6>Principles of Secure OS </h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
 						</div>
 						<div class="module-item">
-							<h6>Advanced OOP</h6>
+							<h6>Advanced OOP </h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
 						</div>
 						<hr />
 						<h5>2nd Year (2023 - 2024)</h5>
 						<div class="module-item">
-							<h6>COMP5004 - Software Development with C and C++</h6>
+							<h6>COMP5004 - Software Development with C and C++ </h6>
 							<p><strong>Grade:</strong> A+</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP5017 - Data Structures and Algorithms</h6>
+							<h6>COMP5017 - Data Structures and Algorithms </h6>
 							<p><strong>Grade:</strong> A+</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP5022 - Innovative Product Development</h6>
+							<h6>COMP5022 - Innovative Product Development </h6>
 							<p><strong>Grade:</strong> A+</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP5011 - Databases</h6>
+							<h6>COMP5011 - Databases </h6>
 							<p><strong>Grade:</strong> B+</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP5013 - Web Application Development</h6>
+							<h6>COMP5013 - Web Application Development </h6>
 							<p><strong>Grade:</strong> C+</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP5020 - Foundations of Security</h6>
+							<h6>COMP5020 - Foundations of Security </h6>
 							<p><strong>Grade:</strong> B</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP5001 - Foundations of Computation</h6>
+							<h6>COMP5001 - Foundations of Computation </h6>
 							<p><strong>Grade:</strong> D</p>
 						</div>
 						<hr />
 						<h5>1st Year (2022 - 2023)</h5>
 						<div class="module-item">
-							<h6>COMP4004 - Problem Solving and Programming</h6>
+							<h6>COMP4004 - Problem Solving and Programming </h6>
 							<p><strong>Grade:</strong> A+</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP4003 - Information Systems</h6>
+							<h6>COMP4003 - Information Systems </h6>
 							<p><strong>Grade:</strong> A+</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP4005 - Object Oriented Programming</h6>
+							<h6>COMP4005 - Object Oriented Programming </h6>
 							<p><strong>Grade:</strong> A+</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP4033 - Basic Communications and PC Networking</h6>
+							<h6>COMP4033 - Basic Communications and PC Networking </h6>
 							<p><strong>Grade:</strong> A</p>
 						</div>
 						<div class="module-item">
-							<h6>MATH4004 - Mathematics for Computing</h6>
+							<h6>MATH4004 - Mathematics for Computing </h6>
 							<p><strong>Grade:</strong> A</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP4009 - Foundations of Computer Systems</h6>
+							<h6>COMP4009 - Foundations of Computer Systems </h6>
 							<p><strong>Grade:</strong> B</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP4006 - DevOps</h6>
+							<h6>COMP4006 - DevOps </h6>
 							<p><strong>Grade:</strong> B</p>
 						</div>
-					</section>
-					<hr />
-					<section class="education-item">
-						<h3>Pre-University <span>(2014 - 2021)</span></h3>
-						<h4>HSDC Alton College <span>(2021)</span></h4>
-						<p>
-							A-Level: 3 Cs in Computer Science, Law, Psychology
-						</p>
-						<h4>Eggar's School <span>(2019)</span></h4>
-						<p>
-							GCSE: 8 GCSE's Grade 4 and Above (C+)
-						</p>
 					</section>
 				</article>
+
 				<article id="experience">
 					<h2 class="major">Experience</h2>
 					<section class="experience">
-						<h3>Work Experience</h3>
 						<div class="experience-item">
-							<h4>Icon Solutions, Tuition House, 27/37 St George's Rd, London, SW19 4EU</h4>
+							<h4>Icon Solutions, London</h4>
 							<p class="role"><strong>Work Experience</strong> | July 2024</p>
-							<p>
-								Gained hands-on exposure to the company's operations. Participated in coding exercises with assistance from Developers, observed agile daily meetings, and engaged in discussions with many knowledgeable professionals. This helped me understand industry practices as well as my employability and interview preparation.
-							</p>
+							<p>Gained hands-on exposure to the company's operations.  Participated in coding exercises with assistance from Developers, observed agile daily meetings, and engaged in discussions with many knowledgeable professionals.  This helped me understand industry practices as well as my employability and interview preparation. </p>
 						</div>
 						<div class="experience-item">
-							<h4>Assistant IT Technician – Treloar's School & College</h4>
-							<p class="role"><strong>Part-Time</strong> | Nov 2021 – February 2022 (4 months)</p>
-							<p>Powell Drive, Holybourne, Alton, GU34 4GL</p>
-							<p>
-								Worked alongside experienced IT technicians, assisting with troubleshooting hardware issues, managing servers and networking tasks, and providing support to students and staff. This position deepened my understanding of IT infrastructure, computer maintenance, and customer service within an educational setting.
-							</p>
+							<h4>schuh, Oxford</h4>
+							<p class="role"><strong>Part-Time Sales Assistant & Stockroom</strong> | Nov 2022 - Mar 2025 </p>
 						</div>
 						<div class="experience-item">
-							<h4>Sales Assistant & Stockroom – schuh</h4>
-							<p class="role"><strong>Part-Time</strong> | November 2022 - April 2023 & Oct 2023 - to date (1 year 10 months)</p>
-							<p>Westgate Shopping Centre, Oxford, OX1 1PE</p>
-							<ul>
-								<li>Handled retail sales, provided customer service, and managed stock replenishment.</li>
-								<li>Developed strong teamwork, salesmanship, and negotiation skills.</li>
-							</ul>
+							<h4>Treloar's School & College, Alton</h4>
+							<p class="role"><strong>Part-Time Assistant IT Technician</strong> | Nov 2021 – Feb 2022</p>
+							<p>Worked alongside experienced IT technicians, assisting with troubleshooting hardware issues and providing support to students and staff.  This position deepened my understanding of IT infrastructure, computer maintenance and customer service within an educational setting. </p>
 						</div>
 						<div class="experience-item">
-							<h4>Waiter / Front Of House – Petersham Nurseries Teahouse</h4>
-							<p class="role"><strong>Full-Time / Seasonal</strong> | Oct 2021 – July 2023 (1 year 10 months)</p>
-							<p>Off Church Lane, Petersham Rd, Richmond, TW10 7AB</p>
-							<ul>
-								<li>Delivered excellent customer service while managing waiting tables and maintaining a clean environment.</li>
-								<li>Enhanced communication and leadership skills through team collaboration.</li>
-							</ul>
+							<h4>Petersham Nurseries Teahouse, Richmond</h4>
+							<p class="role"><strong>Full-Time Waiter</strong> | Oct 2021 – July 2023 </p>
 						</div>
 						<div class="experience-item">
-							<h4>Kitchen Porter – White Truffle Events</h4>
-							<p class="role"><strong>Part-Time</strong> | October 2019 – August 2021 (1 year 11 months)</p>
-							<p>Froyle Park, Ryebridge Ln, Alton, GU34 4LA</p>
-							<ul>
-								<li>Performed duties such as cleaning, and supporting special events.</li>
-								<li>Gained valuable experience in a fast-paced hospitality environment.</li>
-							</ul>
+							<h4>White Truffle Events, Alton</h4>
+							<p class="role"><strong>Part-Time Kitchen Porter</strong> | Oct 2019 – Aug 2021 </p>
 						</div>
 					</section>
 				</article>
@@ -276,22 +239,21 @@
 					<h2 class="major">Projects</h2>
 					<section class="projects">
 						<div class="project-item">
-							<h4>
-								<img src="images/sensefit-logo.png" alt="SenseFit Logo" class="project-logo">
-								SenseFit
-							</h4>
-							<p>
-								Developing SenseFit – a machine learning-powered mobile application designed to predict injury risks for amateur and semi-professional athletes.
-							</p>
+							<h4><img src="images/sensefit-logo.png" alt="SenseFit Logo" class="project-logo"> SenseFit: Developing a Machine Learning Mobile Application for Injury Prediction</h4>
+							<p>Injury prevention is a key concern for athletes at all levels, impacting performance, career longevity, and overall health. Existing injury prediction tools mainly target high-level athletes and professional sports teams. This project presents SenseFit, a mobile application using machine learning to predict injury risks based on biometric data. By analysing key metrics, SenseFit provides personal risk assessments and actionable recommendations.</p>
 						</div>
 						<div class="project-item">
-							<h4>
-								<img src="images/chatadvisor-logo.png" alt="ChatAdvisor Logo" class="project-logo">
-								ChatAdvisor
-							</h4>
-							<p>
-								An AI-powered student support chatbot leveraging Natural Language Processing (NLP) techniques to provide summarized, accessible information from university resources.
-							</p>
+							<h4><img src="images/chatadvisor-logo.png" alt="ChatAdvisor Logo" class="project-logo"> ChatAdvisor - AI Student Support Chatbot</h4>
+							<h5>Problem:</h5>
+							<p>University students, especially those with learning difficulties, often face challenges in navigating extensive support resources and accessing timely, understandable advice. This project aimed to enhance information accessibility and provide a streamlined student support solution.</p>
+							<h5>Solution:</h5>
+							<p>In an Agile Scrum team of seven, we developed ChatAdvisor, an AI-powered chatbot leveraging Natural Language Processing (NLP) techniques. This conversational AI solution was designed for enhanced student support, providing quick access to university resources through summarised, easy-to-read information and personalised recommendations tailored to specific student queries.</p>
+							<h5>Core Technologies:</h5>
+							<ul>
+								<li><strong>AI & NLP Tools:</strong> Apache Lucene, Microsoft Azure AI Text Analytics, OpenAI GPT-3.5 Turbo</li>
+								<li><strong>Backend:</strong> Java</li>
+								<li><strong>Frontend:</strong> Java Swing</li>
+							</ul>
 						</div>
 					</section>
 				</article>
@@ -300,18 +262,14 @@
 					<h2 class="major">Certifications</h2>
 					<section class="courses">
 						<div class="course-item">
-							<h4>Google Cloud Skills Boost</h4>
+							<h4>Google Cloud Skills Boost </h4>
 							<ul>
-								<li>Google Cloud Essentials</li>
-								<li>Generative AI Fundamentals</li>
-								<li>Introduction to Duet AI in Google Workspace</li>
-								<li>Introduction to Generative AI</li>
-								<li>Introduction to Large Language Models</li>
-								<li>Introduction to Responsible AI</li>
+								<li>Google Cloud Essentials </li>
+								<li>Generative AI Fundamentals </li>
 							</ul>
 						</div>
 						<div class="course-item">
-							<p><strong>iDEA Foundation:</strong> Bronze Award</p>
+							<p><strong>iDEA Foundation:</strong> Bronze Award </p>
 						</div>
 					</section>
 				</article>
@@ -337,7 +295,7 @@
 						<h4>Tools & Platforms</h4>
 						<ul>
 							<li><i class="devicon-git-plain skill-logo"></i> Git & GitHub <span class="proficiency">Advanced</span></li>
-							<li><i class="devicon-azure-plain skill-logo"></i> Azure AI <span class="proficiency">Proficient</span></li>
+							<li><i class="devicon-azure-plain skill-logo"></i> Azure AI <span class=" proficiency">Proficient</span></li>
 							<li><i class="devicon-googlecloud-plain skill-logo"></i> Google Colab <span class="proficiency">Proficient</span></li>
 						</ul>
 					</section>
@@ -345,14 +303,12 @@
 
 				<article id="about">
 					<h2 class="major">About Me</h2>
-					<p>
-						I am a highly motivated person who has recently finished my Computer Science degree at Oxford Brookes University with a strong interest in AI, Machine Learning, and Software Development. My background in academic research combined with hands-on industry experience has honed my analytical mindset and problem-solving skills. I thrive in fast-paced, collaborative environments and am eager to contribute to innovative, data-driven solutions.
-					</p>
+					<p>I am a highly motivated person who has recently finished my Computer Science degree at Oxford Brookes University with a strong interest in AI, Machine Learning, and Software Development. My background in academic research combined with hands-on industry experience has honed my analytical mindset and problem-solving skills. I thrive in fast-paced, collaborative environments and am eager to contribute to innovative, data-driven solutions.</p>
 					<ul>
 						<li>Certified PADI Open-Water Scuba Diver</li>
 						<li>Full UK Driving License</li>
 						<li>Lavazza Barista Foundation Course</li>
-						<li>Martial Arts – Kickboxing, Brazilian Jiu Jitsu, and Boxing (UWCB Charity Boxing Fight)</li>
+						<li>Martial Arts – Kickboxing, Brazilian Jiu Jitsu, and Boxing</li>
 						<li>Elementary proficiency in French</li>
 						<li>Guitar and piano hobbyist</li>
 						<li>Sports enthusiast: football, table tennis, running, gym, golf</li>
@@ -363,52 +319,30 @@
 					<h2 class="major">Contact</h2>
 					<form method="POST" action="https://formspree.io/f/mrberjoj">
 						<div class="fields">
-							<div class="field half">
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name" required />
-							</div>
-							<div class="field half">
-								<label for="email">Email</label>
-								<input type="email" name="email" id="email" required />
-							</div>
-							<div class="field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4" required></textarea>
-							</div>
+							<div class="field half"><label for="name">Name</label><input type="text" name="name" id="name" required /></div>
+							<div class="field half"><label for="email">Email</label><input type="email" name="email" id="email" required /></div>
+							<div class="field"><label for="message">Message</label><textarea name="message" id="message" rows="4" required></textarea></div>
 						</div>
-						<input type="hidden" name="_subject" value="New Contact Form Submission!" />
 						<ul class="actions">
 							<li><input type="submit" value="Send Message" class="primary" /></li>
 							<li><input type="reset" value="Reset" /></li>
 						</ul>
 					</form>
 					<div class="details">
-						<p><strong>Address:</strong> Flat 15, 1 Avenue Elmers, Surbiton, Greater London, KT6 4SP</p>
-						<p><strong>Mobile:</strong> <a href="tel:+447767141993">+44 7767141993</a></p>
-						<p><strong>Email:</strong> <a href="mailto:clg@gmx.co.uk" title="Email">clg@gmx.co.uk</a></p>
+						<p><strong>Address:</strong> Flat 15, 1 Avenue Elmers, Surbiton, Greater London, KT6 4SP </p>
+						<p><strong>Mobile:</strong> <a href="tel:+447767141993">+44 7767141993</a> </p>
+						<p><strong>Email:</strong> <a href="mailto:clg@gmx.co.uk" title="Email">clg@gmx.co.uk</a> </p>
 					</div>
 					<ul class="icons">
-						<li>
-							<a href="https://www.linkedin.com/in/charleslgriffiths" class="icon brands fa-linkedin" title="View LinkedIn">
-								<span class="label">LinkedIn</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.github.com/charleslgriffiths" class="icon brands fa-github" title="View GitHub">
-								<span class="label">GitHub</span>
-							</a>
-						</li>
-						<li>
-							<a href="charles-griffiths-cv-2025.pdf" class="icon solid fa-download" title="Download Resume">
-								<span class="label">Download Resume</span>
-							</a>
-						</li>
+						<li><a href="https://www.linkedin.com/in/charleslgriffiths" class="icon brands fa-linkedin" title="View LinkedIn"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/charleslgriffiths" class="icon brands fa-github" title="View GitHub"><span class="label">GitHub</span></a></li>
+						<li><a href="charles-griffiths-cv-2025.pdf" class="icon solid fa-download" title="Download Resume"><span class="label">Download Resume</span></a></li>
 					</ul>
 				</article>
 				</div>
 
 			<footer id="footer">
-				<p class="copyright">&copy; 2025 Charles Griffiths</p>
+				<p class="copyright">&copy; 2025 Charles Griffiths.</p>
 			</footer>
 
 		</div>
