@@ -1170,7 +1170,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/homeback.jpg");
-			background-size: auto,
+			background-size: width,
  256px 256px;
 			background-position: center,
  center;
@@ -1188,7 +1188,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/homeback.png");
+			background-image: url("../../images/homeback.jpg");
 			background-position: center;
 			background-size: width;
 			background-repeat: no-repeat;
