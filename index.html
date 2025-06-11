@@ -5,77 +5,71 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+		
 		<style>
-			/* Add this to your main.css or here for testing */
+			/* Light Theme Color Inversion */
+			body, input, select, textarea { color: #333; }
+			h1, h2, h3, h4, h5, h6, strong, b { color: #000; }
+			a { border-bottom-color: rgba(0, 0, 0, 0.5); }
+			hr { border-bottom-color: #ccc; }
+			h1.major, h2.major, h3.major { border-bottom-color: #000; }
+			#header > *:before { background: #ccc; }
+			#header .content, #header nav ul, #header nav ul li { border-color: #000; }
+			#header nav ul li a:hover { background-color: rgba(0, 0, 0, 0.05); }
+			#main article { background-color: rgba(255, 255, 255, 0.95); }
+
+			/* Background Image */
+			#bg {
+				background-image: url('images/image_eac3ed.jpg');
+				background-size: cover;
+				background-position: center center;
+			}
+			#bg:before {
+				background-color: rgba(255, 255, 255, 0.6);
+			}
+
+			/* Bigger Headshot */
+			.corner-image {
+				width: 200px;
+				height: 200px;
+			}
 			.corner-image img {
-				/* --- CHANGED: Made image smaller --- */
-				width: 150px;
-				height: 150px;
-				border-radius: 50%;
-				object-fit: cover;
+				border: 3px solid white;
+				box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 			}
+
+			/* New Skills Section Styling */
 			.skill-logo {
-				width: 20px;
-				height: 20px;
-				margin-right: 8px;
+				font-size: 2.2em; /* Bigger logos */
+				margin-right: 15px;
 				vertical-align: middle;
-			}
-			.project-logo {
-				/* --- CHANGED: Made logos bigger --- */
-				width: 80px;
-				height: auto;
-				margin-right: 10px;
-				vertical-align: middle;
-			}
-			#header nav ul {
-				/* --- CHANGED: Centered nav buttons --- */
-				justify-content: center;
+				color: #000;
 			}
 			.proficiency {
 				font-size: 0.8em;
-				color: #bbb;
-				margin-left: 5px;
+				color: #333;
+				background-color: #f0f0f0;
+				padding: 4px 10px;
+				border-radius: 5px;
+				margin-left: 10px;
+				vertical-align: middle;
+				font-weight: 600;
+			}
+			#skills h4 {
+				margin-top: 2em;
+				padding-bottom: 0.5em;
+				border-bottom: 1px solid #ccc;
 			}
 			#skills ul {
 				list-style: none;
 				padding-left: 0;
 			}
 			#skills ul li {
-				margin-bottom: 0.5em;
-			}
-			#projects h4, #education h5 {
-				margin-top: 1.5em;
-				margin-bottom: 0.5em;
-				font-size: 0.9rem;
-				text-transform: uppercase;
-				letter-spacing: 0.1rem;
-			}
-			#education h6 {
-				font-size: 0.85rem;
-				text-transform: none;
-				letter-spacing: normal;
-				color: #fff;
-				margin-top: 1em;
-				margin-bottom: 0.25em;
-			}
-			.module-item {
-				margin-bottom: 1.5em;
-				padding-left: 1em;
-				border-left: 2px solid #444;
-			}
-			.module-item p {
-				margin-bottom: 0.25rem;
-				font-size: 0.9rem;
-			}
-			#projects .project-item ul, .module-item ul {
-				list-style: disc;
-				margin-left: 20px;
-				margin-bottom: 1em;
-				font-size: 0.9rem;
-			}
-			#projects .project-item ul li, .module-item ul li {
-				padding-left: 0.5em;
-				margin-bottom: 0.25em;
+				padding: 0.6em 0;
+				font-size: 1.1em;
+				display: flex;
+				align-items: center;
 			}
 		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -115,7 +109,6 @@
 			</header>
 
 			<div id="main">
-
 				<article id="education">
 					<h2 class="major">Education</h2>
 					<section class="education-details">
@@ -124,10 +117,9 @@
 						<p>
 							BSc Computer Science<br />
 							Average grade up to final semester: 68% (Awaiting final results)<br />
-							Nominated for OBU Tech Show for my dissertation project "SenseFit"
+							Nominated for OBU Tech Show for my dissertation project "SenseFit".
 						</p>
-						<hr style="border-color: #555; margin: 2em 0;" />
-						
+						<hr />
 						<h5>3rd Year (2024 - 2025)</h5>
 						<div class="module-item">
 							<h6>Computing Project (Dissertation)</h6>
@@ -157,7 +149,7 @@
 							<h6>Advanced OOP</h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
 						</div>
-						<hr style="border-color: #555; margin: 2em 0;" />
+						<hr />
 						<h5>2nd Year (2023 - 2024)</h5>
 						<div class="module-item">
 							<h6>COMP5004 - Software Development with C and C++</h6>
@@ -187,7 +179,7 @@
 							<h6>COMP5001 - Foundations of Computation</h6>
 							<p><strong>Grade:</strong> D</p>
 						</div>
-						<hr style="border-color: #555; margin: 2em 0;" />
+						<hr />
 						<h5>1st Year (2022 - 2023)</h5>
 						<div class="module-item">
 							<h6>COMP4004 - Problem Solving and Programming</h6>
@@ -218,8 +210,19 @@
 							<p><strong>Grade:</strong> B</p>
 						</div>
 					</section>
+					<hr />
+					<section class="education-item">
+						<h3>Pre-University <span>(2014 - 2021)</span></h3>
+						<h4>HSDC Alton College <span>(2021)</span></h4>
+						<p>
+							A-Level: 3 Cs in Computer Science, Law, Psychology
+						</p>
+						<h4>Eggar's School <span>(2019)</span></h4>
+						<p>
+							GCSE: 8 GCSE's Grade 4 and Above (C+)
+						</p>
+					</section>
 				</article>
-
 				<article id="experience">
 					<h2 class="major">Experience</h2>
 					<section class="experience">
@@ -289,7 +292,7 @@
 							<p>
 								An AI-powered student support chatbot leveraging Natural Language Processing (NLP) techniques to provide summarized, accessible information from university resources.
 							</p>
-							</div>
+						</div>
 					</section>
 				</article>
 				
@@ -316,31 +319,26 @@
 				<article id="skills">
 					<h2 class="major">Skills</h2>
 					<section class="skills">
-						<h3>Technical Skills</h3>
-						<h4>Programming Languages</h4>
+						<h4>Languages & Databases</h4>
 						<ul>
-							<li><img src="images/logos/python-logo.png" alt="Python" class="skill-logo"> Python</li>
-							<li><img src="images/logos/java-logo.svg" alt="Java" class="skill-logo"> Java</li>
-							<li><img src="images/logos/cplusplus-logo.svg" alt="C++" class="skill-logo"> C++</li>
-							<li><img src="images/logos/c-logo.png" alt="C" class="skill-logo"> C</li>
-							<li><img src="images/logos/c#-logo.svg" alt="C#" class="skill-logo"> C#</li>
-							<li><img src="images/logos/javascript-logo.svg" alt="JavaScript" class="skill-logo"> JavaScript</li>
+							<li><i class="devicon-python-plain skill-logo"></i> Python <span class="proficiency">Advanced</span></li>
+							<li><i class="devicon-java-plain skill-logo"></i> Java <span class="proficiency">Advanced</span></li>
+							<li><i class="devicon-javascript-plain skill-logo"></i> JavaScript <span class="proficiency">Advanced</span></li>
+							<li><i class="devicon-postgresql-plain skill-logo"></i> PostgreSQL <span class="proficiency">Advanced</span></li>
+							<li><i class="devicon-cplusplus-plain skill-logo"></i> C++ <span class="proficiency">Proficient</span></li>
 						</ul>
-						<h4>Web Development</h4>
+						<h4>Frameworks & Technologies</h4>
 						<ul>
-							<li><img src="images/logos/html5-logo.svg" alt="HTML" class="skill-logo"> HTML</li>
-							<li><img src="images/logos/css3-logo.svg" alt="CSS" class="skill-logo"> CSS</li>
-							<li><img src="images/logos/react-native-logo.png" alt="React Native" class="skill-logo"> React Native</li>
-							<li><img src="images/logos/flask-logo.png" alt="Flask" class="skill-logo"> Flask</li>
-							<li><img src="images/logos/postgresql-logo.png" alt="PostgreSQL" class="skill-logo"> PostgreSQL</li>
-							<li><img src="images/logos/sqlite-logo.png" alt="SQLite" class="skill-logo"> SQLite</li>
+							<li><i class="devicon-react-original skill-logo"></i> React Native <span class="proficiency">Advanced</span></li>
+							<li><i class="devicon-html5-plain skill-logo"></i> HTML5 <span class="proficiency">Advanced</span></li>
+							<li><i class="devicon-css3-plain skill-logo"></i> CSS3 <span class="proficiency">Advanced</span></li>
+							<li><i class="devicon-flask-original skill-logo"></i> Flask <span class="proficiency">Advanced</span></li>
 						</ul>
-						<h3>Soft Skills</h3>
+						<h4>Tools & Platforms</h4>
 						<ul>
-							<li>Critical and Analytical Thinking</li>
-							<li>Communication and Teamwork</li>
-							<li>Problem Solving</li>
-							<li>Leadership</li>
+							<li><i class="devicon-git-plain skill-logo"></i> Git & GitHub <span class="proficiency">Advanced</span></li>
+							<li><i class="devicon-azure-plain skill-logo"></i> Azure AI <span class="proficiency">Proficient</span></li>
+							<li><i class="devicon-googlecloud-plain skill-logo"></i> Google Colab <span class="proficiency">Proficient</span></li>
 						</ul>
 					</section>
 				</article>
@@ -407,8 +405,7 @@
 						</li>
 					</ul>
 				</article>
-
-			</div>
+				</div>
 
 			<footer id="footer">
 				<p class="copyright">&copy; 2025 Charles Griffiths</p>
