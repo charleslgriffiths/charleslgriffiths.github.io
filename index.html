@@ -7,22 +7,33 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
 			/* Add this to your main.css or here for testing */
+			.corner-image img {
+				/* --- CHANGED: Made image smaller --- */
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				object-fit: cover;
+			}
 			.skill-logo {
-				width: 20px; /* Adjust size as needed */
-				height: 20px; /* Adjust size as needed */
+				width: 20px;
+				height: 20px;
 				margin-right: 8px;
 				vertical-align: middle;
 			}
-			/* --- CHANGED: Increased project logo size --- */
 			.project-logo {
-				width: 60px; /* Increased from 40px */
+				/* --- CHANGED: Made logos bigger --- */
+				width: 80px;
 				height: auto;
 				margin-right: 10px;
 				vertical-align: middle;
 			}
+			#header nav ul {
+				/* --- CHANGED: Centered nav buttons --- */
+				justify-content: center;
+			}
 			.proficiency {
 				font-size: 0.8em;
-				color: #bbb; /* Adjust color as needed */
+				color: #bbb;
 				margin-left: 5px;
 			}
 			#skills ul {
@@ -32,14 +43,14 @@
 			#skills ul li {
 				margin-bottom: 0.5em;
 			}
-			#projects h4, #education h5 { /* To ensure subheadings look distinct */
+			#projects h4, #education h5 {
 				margin-top: 1.5em;
 				margin-bottom: 0.5em;
-				font-size: 0.9rem; /* Slightly smaller than main section titles */
+				font-size: 0.9rem;
 				text-transform: uppercase;
 				letter-spacing: 0.1rem;
 			}
-			#education h6 { /* For Module Titles */
+			#education h6 {
 				font-size: 0.85rem;
 				text-transform: none;
 				letter-spacing: normal;
@@ -50,7 +61,7 @@
 			.module-item {
 				margin-bottom: 1.5em;
 				padding-left: 1em;
-				border-left: 2px solid #444; /* Subtle border for module items */
+				border-left: 2px solid #444;
 			}
 			.module-item p {
 				margin-bottom: 0.25rem;
@@ -96,6 +107,7 @@
 						<li><a href="#experience">Experience</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#skills">Skills</a></li>
+						<li><a href="#certifications">Certifications</a></li>
 						<li><a href="#about">About Me</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
@@ -114,73 +126,68 @@
 							Average grade up to final semester: 68% (Awaiting final results)<br />
 							Nominated for OBU Tech Show for my dissertation project "SenseFit"
 						</p>
-
 						<hr style="border-color: #555; margin: 2em 0;" />
 						
 						<h5>3rd Year (2024 - 2025)</h5>
 						<div class="module-item">
-							<h6>COMP6013 - Computing Project (Dissertation)</h6>
+							<h6>Computing Project (Dissertation)</h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
-							<p><strong>Skills Learned:</strong> Python, React Native, JavaScript, Machine Learning (Random Forest, kNN, LSTM), Agile Project Management, Presentation Skills, Expo, Biometric Data Analysis, GDPR Compliance.</p>
-							<p><strong>Relevant Projects:</strong> SenseFit</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP6011 - Machine Learning</h6>
+							<h6>Artificial Intelligence</h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
-							<p><strong>Skills Learned:</strong> Machine Learning (Naïve Bayes, kNN), Neural Networks, Backpropagation, Hyperparameter Tuning, R, Data Preprocessing, Cross-Validation, Performance Analysis.</p>
-							<p><strong>Relevant Projects:</strong> Machine Learning Model Evaluation & Neural Network Implementation</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP6032 - Artificial Intelligence</h6>
+							<h6>Machine Learning</h6>
 							<p><strong>Grade:</strong> Awaiting Results</p>
-							<p><strong>Skills Learned:</strong> Artificial Intelligence, Heuristic Analysis, Python, Probabilistic Models, Path Planning (A* Search), Optimization.</p>
-							<p><strong>Relevant Projects:</strong> Robo-Uber: AI-Based Autonomous Taxi Dispatch System</p>
 						</div>
-
+						<div class="module-item">
+							<h6>Software Development</h6>
+							<p><strong>Grade:</strong> Awaiting Results</p>
+						</div>
+						<div class="module-item">
+							<h6>Cloud Computing & IoT</h6>
+							<p><strong>Grade:</strong> Awaiting Results</p>
+						</div>
+						<div class="module-item">
+							<h6>Principles of Secure OS</h6>
+							<p><strong>Grade:</strong> Awaiting Results</p>
+						</div>
+						<div class="module-item">
+							<h6>Advanced OOP</h6>
+							<p><strong>Grade:</strong> Awaiting Results</p>
+						</div>
 						<hr style="border-color: #555; margin: 2em 0;" />
-
 						<h5>2nd Year (2023 - 2024)</h5>
 						<div class="module-item">
 							<h6>COMP5004 - Software Development with C and C++</h6>
 							<p><strong>Grade:</strong> A+</p>
-							<p><strong>Skills Learned:</strong> C++, C, Object-Oriented Design, Game Logic Implementation.</p>
-							<p><strong>Relevant Projects:</strong> Text Adventure Game Engine in C++</p>
 						</div>
 						<div class="module-item">
 							<h6>COMP5017 - Data Structures and Algorithms</h6>
 							<p><strong>Grade:</strong> A+</p>
-							<p><strong>Skills Learned:</strong> Java, Hash Tables, Binary Search Trees (BST), Graph Traversal (DFS, BFS, Dijkstra's, A*), Performance Logging, Test-Driven Development (TDD).</p>
-							<p><strong>Relevant Projects:</strong> Advanced Data Structures & Pathfinding Algorithms in Java</p>
 						</div>
 						<div class="module-item">
 							<h6>COMP5022 - Innovative Product Development</h6>
 							<p><strong>Grade:</strong> A+</p>
-							<p><strong>Skills Learned:</strong> Java, Apache Lucene, Microsoft Azure AI, Agile Project Management, GitHub, JUnit, REST APIs, Research, Teamwork.</p>
-							<p><strong>Relevant Projects:</strong> ChatAdvisor</p>
 						</div>
 						<div class="module-item">
 							<h6>COMP5011 - Databases</h6>
 							<p><strong>Grade:</strong> B+</p>
-							<p><strong>Skills Learned:</strong> SQL, Database Design (ERD, Normalization 1NF & 2NF), Data Transformation (XML, JSON, DTD, XSLT), SQLite, Data Protection (GDPR).</p>
-							<p><strong>Relevant Projects:</strong> Data Transformation & Relational Database Development</p>
+						</div>
+						<div class="module-item">
+							<h6>COMP5013 - Web Application Development</h6>
+							<p><strong>Grade:</strong> C+</p>
 						</div>
 						<div class="module-item">
 							<h6>COMP5020 - Foundations of Security</h6>
 							<p><strong>Grade:</strong> B</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP5013 - Web Application Development</h6>
-							<p><strong>Grade:</strong> C+</p>
-							<p><strong>Skills Learned:</strong> Python (Flask), SQLite, AJAX, JSON, HTML, CSS, JavaScript, WCAG Accessibility, Security (SQL Injection, XSS), Responsive Design, Testing.</p>
-							<p><strong>Relevant Projects:</strong> Semantic Debate Forum Web Application</p>
-						</div>
-						<div class="module-item">
 							<h6>COMP5001 - Foundations of Computation</h6>
 							<p><strong>Grade:</strong> D</p>
 						</div>
-
 						<hr style="border-color: #555; margin: 2em 0;" />
-						
 						<h5>1st Year (2022 - 2023)</h5>
 						<div class="module-item">
 							<h6>COMP4004 - Problem Solving and Programming</h6>
@@ -195,11 +202,11 @@
 							<p><strong>Grade:</strong> A+</p>
 						</div>
 						<div class="module-item">
-							<h6>MATH4004 - Mathematics for Computing</h6>
+							<h6>COMP4033 - Basic Communications and PC Networking</h6>
 							<p><strong>Grade:</strong> A</p>
 						</div>
 						<div class="module-item">
-							<h6>COMP4033 - Basic Communications and PC Networking</h6>
+							<h6>MATH4004 - Mathematics for Computing</h6>
 							<p><strong>Grade:</strong> A</p>
 						</div>
 						<div class="module-item">
@@ -211,25 +218,10 @@
 							<p><strong>Grade:</strong> B</p>
 						</div>
 					</section>
-
-					<hr style="border-color: #fff; margin: 3em 0;" /> 
-
-					<section class="education-item">
-						<h3>Pre-University <span>(2014 - 2021)</span></h3>
-						<h4>HSDC Alton College <span>(2021)</span></h4>
-						<p>
-							A-Level: 3 Cs in Computer Science, Law, Psychology
-						</p>
-						<h4>Eggar's School <span>(2019)</span></h4>
-						<p>
-							GCSE: 8 GCSE's Grade 4 and Above (C+)
-						</p>
-					</section>
 				</article>
 
 				<article id="experience">
-					<h2 class="major">Experience & Certifications</h2>
-
+					<h2 class="major">Experience</h2>
 					<section class="experience">
 						<h3>Work Experience</h3>
 						<div class="experience-item">
@@ -275,9 +267,35 @@
 							</ul>
 						</div>
 					</section>
+				</article>
 
+				<article id="projects">
+					<h2 class="major">Projects</h2>
+					<section class="projects">
+						<div class="project-item">
+							<h4>
+								<img src="images/sensefit-logo.png" alt="SenseFit Logo" class="project-logo">
+								SenseFit
+							</h4>
+							<p>
+								Developing SenseFit – a machine learning-powered mobile application designed to predict injury risks for amateur and semi-professional athletes.
+							</p>
+						</div>
+						<div class="project-item">
+							<h4>
+								<img src="images/chatadvisor-logo.png" alt="ChatAdvisor Logo" class="project-logo">
+								ChatAdvisor
+							</h4>
+							<p>
+								An AI-powered student support chatbot leveraging Natural Language Processing (NLP) techniques to provide summarized, accessible information from university resources.
+							</p>
+							</div>
+					</section>
+				</article>
+				
+				<article id="certifications">
+					<h2 class="major">Certifications</h2>
 					<section class="courses">
-						<h3>Certifications</h3>
 						<div class="course-item">
 							<h4>Google Cloud Skills Boost</h4>
 							<ul>
@@ -295,150 +313,34 @@
 					</section>
 				</article>
 
-				<article id="projects">
-					<h2 class="major">Projects</h2>
-					<section class="projects">
-						<div class="project-item">
-							<h4>
-								<img src="images/sensefit-logo.png" alt="SenseFit Logo" class="project-logo">
-								SenseFit <span>(COMP6013)</span>
-							</h4>
-							<p>
-								Developing SenseFit – a machine learning-powered mobile application designed to predict injury risks for amateur and semi-professional athletes. Unlike existing solutions tailored for elite sports, SenseFit focuses on accessibility and usability. The app analyzes key biometric data such as heart rate variability (HRV), sleep quality, and fatigue levels to provide personalized injury risk assessments and proactive training recommendations. It integrates advanced ML models like Random Forest, k-Nearest Neighbors (kNN), and Long Short-Term Memory (LSTM) networks to detect trends and optimize injury prevention strategies. Built with React Native, the application ensures a seamless user experience while prioritizing data security and GDPR compliance.
-							</p>
-							<p><strong>Skills:</strong> Python, React Native, JavaScript, Agile Project Management, Presentation Skills, Expo</p>
-						</div>
-						<div class="project-item">
-							<h4>
-								<img src="images/chatadvisor-logo.png" alt="ChatAdvisor Logo" class="project-logo">
-								ChatAdvisor <span>(COMP5022)</span>
-							</h4>
-					
-							<h4>Problem:</h4>
-							<p>University students, especially those with learning difficulties, often face challenges in navigating extensive support 
-					resources and accessing timely, understandable advice. This project aimed to enhance information 
-					accessibility and provide a streamlined student support solution.</p>
-					
-							<h4>Solution:</h4>
-							<p>In an Agile Scrum team of seven, we developed ChatAdvisor, an AI-powered chatbot leveraging Natural Language Processing (NLP) techniques. This conversational AI solution was
-					 designed for enhanced student support, providing quick access to university resources 
-					through summarised, easy-to-read information and personalised 
-					recommendations tailored to specific student queries.</p>
-					
-							<h4>My Contributions:</h4>
-							<ul>
-								<li>🔍 Integrating Apache Lucene to enable efficient information retrieval.</li>
-								<li>✨ Leveraged Microsoft Azure AI Text Analytics for effective text summarisation.</li>
-								<li>🤖 Configured OpenAI's GPT-3.5 Turbo for empathetic, context-aware AI responses.</li>
-								<li>💻 Led User Interface (UI) development with Java Swing for an intuitive UX.</li>
-								<li>ℹ️ Developed FAQ page to enhance usability and support access.</li>
-							</ul>
-						
-							<h4>Core Technologies:</h4>
-							<ul>
-								<li><strong>AI & NLP Tools:</strong> Apache Lucene, Microsoft Azure AI Text Analytics, OpenAI GPT-3.5 Turbo</li>
-								<li><strong>Backend Software Development:</strong> Java</li>
-								<li><strong>Frontend UI Development:</strong> Java Swing</li>
-								<li><strong>Cloud & API Integration:</strong> Microsoft Azure AI</li>
-							</ul>
-						
-							<h4>Achievements & Impact:</h4>
-							<ul>
-								<li>Delivered an AI chatbot for quick, summarised access to university support, helping to reduce student stress</li>
-								<li>Provided a personalised user experience with tailored recommendations for individual student queries</li>
-							</ul>
-						</div>
-					</section>
-				</article>
-
 				<article id="skills">
 					<h2 class="major">Skills</h2>
 					<section class="skills">
 						<h3>Technical Skills</h3>
-						
 						<h4>Programming Languages</h4>
 						<ul>
-							<li><img src="images/logos/python-logo.png" alt="Python" class="skill-logo"> Python <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/java-logo.svg" alt="Java" class="skill-logo"> Java <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/cplusplus-logo.svg" alt="C++" class="skill-logo"> C++ <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/c-logo.png" alt="C" class="skill-logo"> C <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/c#-logo.svg" alt="C#" class="skill-logo"> C# <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/javascript-logo.svg" alt="JavaScript" class="skill-logo"> JavaScript <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/pascal-logo.png" alt="Pascal" class="skill-logo"> Pascal <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/python-logo.png" alt="Python" class="skill-logo"> Python</li>
+							<li><img src="images/logos/java-logo.svg" alt="Java" class="skill-logo"> Java</li>
+							<li><img src="images/logos/cplusplus-logo.svg" alt="C++" class="skill-logo"> C++</li>
+							<li><img src="images/logos/c-logo.png" alt="C" class="skill-logo"> C</li>
+							<li><img src="images/logos/c#-logo.svg" alt="C#" class="skill-logo"> C#</li>
+							<li><img src="images/logos/javascript-logo.svg" alt="JavaScript" class="skill-logo"> JavaScript</li>
 						</ul>
-
-						<h4>Web Development (Frontend)</h4>
+						<h4>Web Development</h4>
 						<ul>
-							<li><img src="images/logos/html5-logo.svg" alt="HTML" class="skill-logo"> HTML <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/css3-logo.svg" alt="CSS" class="skill-logo"> CSS <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/javascript-logo.svg" alt="JavaScript" class="skill-logo"> JavaScript <span class="proficiency">(Proficiency Level)</span></li> 
-							<li><img src="images/logos/jquery-logo.svg" alt="jQuery" class="skill-logo"> jQuery <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/react-native-logo.png" alt="React Native" class="skill-logo"> React Native <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/ajax-logo.png" alt="AJAX" class="skill-logo"> AJAX <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/json-logo.png" alt="JSON" class="skill-logo"> JSON <span class="proficiency">(Proficiency Level)</span></li>
+							<li><img src="images/logos/html5-logo.svg" alt="HTML" class="skill-logo"> HTML</li>
+							<li><img src="images/logos/css3-logo.svg" alt="CSS" class="skill-logo"> CSS</li>
+							<li><img src="images/logos/react-native-logo.png" alt="React Native" class="skill-logo"> React Native</li>
+							<li><img src="images/logos/flask-logo.png" alt="Flask" class="skill-logo"> Flask</li>
+							<li><img src="images/logos/postgresql-logo.png" alt="PostgreSQL" class="skill-logo"> PostgreSQL</li>
+							<li><img src="images/logos/sqlite-logo.png" alt="SQLite" class="skill-logo"> SQLite</li>
 						</ul>
-
-						<h4>Web Development (Backend)</h4>
-						<ul>
-							<li><img src="images/logos/flask-logo.png" alt="Flask" class="skill-logo"> Flask <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/nodejs-logo.svg" alt="Node.js" class="skill-logo"> Node.js <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/postgresql-logo.png" alt="PostgreSQL" class="skill-logo"> PostgreSQL <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/sql-logo.png" alt="SQL" class="skill-logo"> SQL <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/sqlite-logo.png" alt="SQLite" class="skill-logo"> SQLite <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/mysql-logo.png" alt="MySQL" class="skill-logo"> MySQL <span class="proficiency">(Proficiency Level)</span></li>
-						</ul>
-						
-						<h4>Developer Tools & Practices</h4>
-						<ul>
-							<li><img src="images/logos/git-logo.svg" alt="Git" class="skill-logo"> Git <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/github-logo.svg" alt="GitHub" class="skill-logo"> GitHub <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/npm-logo.svg" alt="NPM" class="skill-logo"> NPM <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/agile-logo.png" alt="Agile" class="skill-logo"> Agile Development <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/junit-logo.png" alt="JUnit" class="skill-logo"> JUnit <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/apache-lucene-logo.png" alt="Apache Lucene" class="skill-logo"> Apache Lucene <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/expo-go-logo.svg" alt="Expo" class="skill-logo"> Expo <span class="proficiency">(Proficiency Level)</span></li>
-						</ul>
-
-						<h4>Cloud Platforms</h4>
-						<ul>
-							<li><img src="images/logos/azure-logo.svg" alt="Microsoft Azure" class="skill-logo"> Microsoft Azure AI <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/gcp-logo.png" alt="Google Cloud Platform" class="skill-logo"> Google Cloud Platform <span class="proficiency">(Proficiency Level)</span></li>
-						</ul>
-						
-						<h4>Data Science & ML Tools</h4>
-						<ul>
-							<li><img src="images/logos/r-logo.png" alt="R" class="skill-logo"> R <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/numpy-logo.png" alt="NumPy" class="skill-logo"> NumPy <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/matplotlib-logo.png" alt="Matplotlib" class="skill-logo"> Matplotlib <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/jupyter-logo.png" alt="Jupyter" class="skill-logo"> Jupyter Notebooks <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/google-colab-logo.png" alt="Google Colab" class="skill-logo"> Google Colab <span class="proficiency">(Proficiency Level)</span></li>
-						</ul>
-
-						<h4>Machine Learning & AI Concepts</h4>
-						<ul>
-							<li><img src="images/logos/machine-learning-logo.png" alt="Machine Learning" class="skill-logo"> Machine Learning <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/ai-logo.png" alt="Artificial Intelligence" class="skill-logo"> Artificial Intelligence <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/neural-networks-logo.png" alt="Neural Networks" class="skill-logo"> Neural Networks & Backpropagation <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/hyperparameter-tuning-logo.png" alt="Hyperparameter Tuning" class="skill-logo"> Hyperparameter Tuning <span class="proficiency">(Proficiency Level)</span></li>
-						</ul>
-						
-						<h4>Database Management Concepts</h4>
-						<ul>
-							<li><img src="images/logos/database-design-logo.png" alt="Database Design" class="skill-logo"> Database Design (ERD, Normalization) <span class="proficiency">(Proficiency Level)</span></li>
-							<li><img src="images/logos/data-transformation-logo.png" alt="Data Transformation" class="skill-logo"> Data Transformation (XML, JSON, DTD, XSLT) <span class="proficiency">(Proficiency Level)</span></li>
-						</ul>
-
 						<h3>Soft Skills</h3>
 						<ul>
 							<li>Critical and Analytical Thinking</li>
 							<li>Communication and Teamwork</li>
-							<li>Attention to Detail</li>
-							<li>Adaptability</li>
-							<li>Leadership</li>
 							<li>Problem Solving</li>
-							<li>Presentation Skills</li>
-							<li>Customer Service</li>
-							<li>Salesmanship & Negotiation</li>
+							<li>Leadership</li>
 						</ul>
 					</section>
 				</article>
