@@ -1695,6 +1695,3 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-		.skill-logo {
-    		color: initial; /* Resets the color to its default value */
-		}
