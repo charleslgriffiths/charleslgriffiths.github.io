@@ -30,6 +30,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
+	background-image: url("../../images/homeback.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	line-height: 1;
 }
 /* The image is fixed but placed behind content */
@@ -1689,4 +1694,7 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
+		}
+		.skill-logo {
+    		color: initial; /* Resets the color to its default value */
 		}
