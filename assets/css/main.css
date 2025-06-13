@@ -1696,7 +1696,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 		.project-logo {
-			max-width: 300px; /* Increase this value as needed */
+			max-width: 200px; /* Increase this value as needed */
 			width: 100%;
 			height: auto;
 			margin-bottom: 1em;
